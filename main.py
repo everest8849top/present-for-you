@@ -49,7 +49,7 @@ class CustomDataChatbot:
                             message_placeholder.markdown(st.session_state.messages[-1]['content'])
                 except Exception as e:
                     stream = str(e)
-                    st.session_state.messages.append({"role": "assistant", "content": "I'm sorry for this error! There are so many visitors to my app and I'm using free gpt api. It has 200 limit per day, unfortuntely, I used them all."})
+                    st.session_state.messages.append({"role": "assistant", "content": "I'm sorry for this error! There are so many visitors to my app and I'm using free gpt api. It has 200 limit per day. Unfortuntely, I used them all. Could you please use your api key?\n:-\n"})
                     for chunk in stream:
                         chunk_content = chunk
                         if chunk_content is not None:
