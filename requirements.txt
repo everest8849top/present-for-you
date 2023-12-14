@@ -1,0 +1,3 @@
+streamlit
+pydeck
+openai==1.3.9
